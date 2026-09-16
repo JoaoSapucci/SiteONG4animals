@@ -1,0 +1,227 @@
+body{background-color: #f3f0fa;
+    overflow-x: hidden;
+    max-width: 100%;}
+
+.centraliza{
+    text-align: center;
+}
+.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #2e2440;
+}
+.nome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #7c5cbf;
+}
+.divisor {
+    border: none;
+    height: 3px;
+    background-color: #2e2440;
+    width: 100%;
+    margin: 40px auto;
+}
+.sobre{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #2e2440;
+    margin-left: 350px;
+
+}
+.texto1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7c5cbf;
+    font-size: 20px;
+    width: 60%;
+    margin: 35px;
+    text-align: left;
+    text-indent: 40px;
+}
+.foto{
+    width: 200px; 
+    height: auto;       
+    float: right;
+    margin-left: 20px; 
+    margin-right: 200px;
+    margin-top: 100px;
+    border: 6px solid #2e2440;
+}
+.hab{
+    margin-top: 100px;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #2e2440;
+    margin-right: 340px;
+}
+.linux{
+    clear: both;
+    width: 200px; 
+    height: auto;       
+    float: left;
+    margin-left: 300px; 
+    margin-right: 20px;
+    margin-top: -100px;
+}
+.lista{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7c5cbf;
+    font-size: 20px;
+    width: 60%;
+    margin: 35px;
+    margin-left:900px;
+    text-align: left;
+    list-style-position: inside;
+    margin-top: 10px;
+
+}
+.python{
+  clear: both;
+  width: 250px; 
+  height: auto;       
+  float: left;
+  margin-left: 280px; 
+  margin-right: 20px;
+  margin-top: -100px;
+}
+.lista2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7c5cbf;
+    font-size: 20px;
+    width: 60%;
+    margin: 35px;
+    text-align: left;
+    list-style-position: inside;
+    margin-top: 10px;
+}
+.fipp{
+    width: 250px; 
+    height: auto;       
+    float: right;
+    margin-left: 20px; 
+    margin-right: 230px;
+    margin-top: 140px;
+}
+.brain{
+    width: 200px; 
+    height: auto;       
+    float: left;
+    margin-left: 200px; 
+    margin-right: 20px;
+    margin-top: -20px;
+}
+.lista3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7c5cbf;
+    font-size: 20px;
+    width: 60%;
+    margin: 35px;
+    margin-left:500px;
+    text-align: left;
+    list-style-position: inside;
+    margin-top: 10px;
+
+}
+.proj{
+    margin-top: 100px;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #2e2440;
+    margin-right: 480px;
+}
+.lec{
+    margin-top: 100px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #2e2440;
+}.texto2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7c5cbf;
+    font-size: 20px;
+    width: 60%;
+    margin: 35px;
+    text-align: center;
+    text-indent: 40px;
+    margin-left: 280px;
+}
+.github{
+    width: 100px; 
+    height: auto;       
+    float: center   ;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+.linkedin{
+    width: 100px; 
+    height: auto;       
+    float: center;
+    margin-left: 640px; 
+    margin-top: -20px;
+
+}
+.bash{
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 155px;
+
+}
+.titulobash{
+    color: #2e2440;
+    text-align: center;
+    margin-left: -700px;
+    font-size: 20px;
+}
+.textobash{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 34%;
+    margin: 35px;
+    text-align: left;
+    text-indent: 40px;
+    margin-left: 150px;
+    color: #7c5cbf;
+}
+.tituloanalise{
+    color: #2e2440;
+    text-align: center;
+    margin-right: -720px;
+    font-size: 20px;
+    margin-top: -625px;
+}
+.textoanalise{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 34%;
+    margin: 35px;
+    text-align: left;
+    text-indent: 40px;
+    color: #7c5cbf;
+    margin-left: 844px;
+}
+.analise{
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 855px;
+    margin-top: -5px;
+
+}
+.nav{
+    background-color: #2e2440;
+    color: #f3f0fa;
+    display: flex;  
+    justify-content: space-around;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 15px;
+}
+.a{
+  color: #ffffff;
+  text-decoration: none; 
+  font-size: 16px;
+}
+html{
+    scroll-behavior: smooth;
+}
