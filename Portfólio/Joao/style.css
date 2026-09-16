@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ebd5b5;
+    color: #3d3229;
+    line-height: 1.6;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #3d3229;
+    margin-bottom: 10px;
+}
+
+.titulo-site {
+    font-size: 35px;
+    font-weight: bold;
+    color: #926846;
+    margin-bottom: 0px;
+}
+
+.foto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 40%;
+}
+
+.secao {
+    background-color: #f3e4cf;
+    padding: 35px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(61, 50, 41, 0.08);
+}
+
+.secao h2 {
+    font-size: 28px;
+    color: #3d3229;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d2b895;
+    padding-bottom: 10px;
+}
+
+.secao p {
+    color: #926846;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.cards-org1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.cards-org2{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #ebd5b5;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #d2b895;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
+}
+
+.card h3 {
+    color: #3d3229;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #926846;
+    font-size: 14px;
+    margin: 0;
+}
+
+p em{
+    color: #3d3229;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card p em{
+    font-size: 14px;
+}
+
+.link {
+    background-color: #fff;
+    color: #513a20;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #d4c4a0;
+    transition: background 0.2s;
+}
+
+.link:hover {
+    background-color: #513a20;
+    color: #fff;
+}
+
+#contato{
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 2px solid #d2b895;
+}
+footer p { 
+    color: #926846;
+    font-size: 14px;
+}
