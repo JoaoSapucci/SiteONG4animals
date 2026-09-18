@@ -7,6 +7,9 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #F1EFE8;
 }
 
 nav {
@@ -98,13 +101,6 @@ nav {
     background-color: #9FE1CB;
     color: #0F6E56;
     font-family: Arial, sans-serif;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    background-color: #F1EFE8;
 }
 .divisor {
     width: 80%;
