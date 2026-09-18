@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murillo | Portfólio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
+
+        header img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            object-fit:cover;
+            margin-bottom:15px;
+        }
+
+        nav{
+            background:#333;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+        }
+
+        section{
+            max-width:1000px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        h2{
+            margin-bottom:15px;
+            color:#222;
+        }
+
+        .cards{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            flex:1;
+            min-width:250px;
+        }
+
+        .card img{
+            width:100%;
+            border-radius:8px;
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Foto de Perfil">
+
+        <h1>Murillo Maiorano</h1>
+        <p>Python • Ciência de Dados • Machine Learning</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <label for="itfile">Selecione um arquivo</label>
+    <input type="file", name="itfile" id="itfile">
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+
+        <p>
+            Sou estudante e apaixonado por programação,
+            especialmente Python, Ciência de Dados e Inteligência Artificial.
+            Gosto de criar projetos que utilizam Machine Learning,
+            análise de dados e automação.
+            Sou formado em ADS, e faço Ciência de dados e ciência da computção.
+        </p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Python</h3>
+                <p>Automação, scripts e desenvolvimento de soluções.</p>
+            </div>
+
+            <div class="card">
+                <h3>Data Science</h3>
+                <p>Análise de dados com Pandas, visualização e tratamento.</p>
+            </div>
+
+            <div class="card">
+                <h3>Machine Learning</h3>
+                <p>Modelos utilizando PyTorch e aprendizado de máquina.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://imgs.search.brave.com/KXkhESyUvXUAVAmDw_EvxfdHXn2hCM2wmW_9qMQJhX4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTgv/ODc3LzI0Ni9zbWFs/bC9ncm93dGgtZmlu/YW5jZS1ncmFwaC1p/Y29uLWluLWJsYWNr/LWNpcmNsZS1wbmcu/cG5n" alt="Gráficos e Machine Learning">
+
+                <h3>Previsor de graficos</h3>
+
+                <p>
+                    Modelo de Machine Learning treinado para
+                    se adaptar a graficos.
+                </p>
+                <link rel="stylesheet" href="https://github.com/maioranomu/GraphPredictor">
+            </div>
+
+            <div class="card">
+                <img src="https://imgs.search.brave.com/YUIdWW__amj4s8TxgE4MF58hxbKn0aIWFP_KjUzF8BI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWJvdC1pY29uLXN2/Zy1kb3dubG9hZC1w/bmctOTAyMTI2LnBu/Zz9mPXdlYnAmdz0x/Mjg" alt="Projeto 2">
+
+                <h3>Bot do discord.</h3>
+
+                <p>
+                    Bot do discord com diversas integrações para uso próprio.
+                </p>
+                <link rel="stylesheet" href="https://github.com/maioranomu/SunnyBot">
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <p>Email: mumaiorano@gmail.com</p>
+        <p>GitHub: github.com/maioranomu</p>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Murillo Maiorano - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
