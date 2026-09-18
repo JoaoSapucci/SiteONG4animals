@@ -408,3 +408,46 @@ nav {
     margin: 0;
     font-size: 14px;
 }
+
+/*Parte Leo*/
+
+.titulo-adoção{
+    width: 100%;
+    padding: 80px;
+    text-align: center;
+    color: #0F6E56;
+    font-size: 30px;
+}
+
+.titulo-adoção p{
+    color: black;
+    font-size: 24px;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.5;
+}
+
+.titulo-adoção hr{width: 80%;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #0F6E56;
+    border: none;
+    border-radius: 10px;
+}
+
+.conheça-animais h2{
+    width: 100%;
+    text-align: center;
+    color: #0F6E56;
+    font-size: 40px;
+}
+
+.conheça-animais p{
+    color: black;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 25px;
+    padding-top: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
