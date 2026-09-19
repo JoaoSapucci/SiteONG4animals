@@ -681,3 +681,178 @@ nav {
 .faq-contatos a:hover {
     background-color: #1D9E75;
 }
+
+/*resgate*/
+.resgates-apresentacao {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.resgates-apresentacao h1 {
+    color: #0F6E56;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.resgates-apresentacao p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #0F6E56;
+    font-size: 17px;
+    line-height: 1.6;
+}
+.registro-resgate {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.registro-conteudo {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.registro-resgate h2 {
+    color: #0F6E56;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.registro-resgate p {
+    color: #0F6E56;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.registro-info {
+    margin: 30px 0;
+    padding: 25px;
+    border: 1px solid #0F6E56;
+    border-radius: 8px;
+}
+
+.registro-info h3 {
+    color: #0F6E56;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.registro-info p {
+    margin: 0;
+}
+
+.btn-resgate {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0F6E56;
+    color: #F1EFE8;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.btn-resgate:hover {
+    background-color: #1D9E75;
+}
+
+.resgates-casos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.resgates-casos h2 {
+    color: #0F6E56;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.resgates-introducao {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #0F6E56;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.resgates-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.resgate-card {
+    width: 300px;
+    background-color: #F1EFE8;
+    border: 1px solid #0F6E56;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.resgate-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.resgate-card-conteudo {
+    padding: 20px;
+}
+
+.resgate-card h3 {
+    color: #0F6E56;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.resgate-card p {
+    color: #0F6E56;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-ficha {
+    display: inline-block;
+    padding: 9px 18px;
+    background-color: #0F6E56;
+    color: #F1EFE8;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-ficha:hover {
+    background-color: #1D9E75;
+}
+.responsabilidade {
+    padding: 50px 20px 60px;
+}
+
+.responsabilidade-conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #0F6E56;
+    border-radius: 8px;
+}
+
+.responsabilidade h2 {
+    color: #0F6E56;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.responsabilidade p {
+    color: #0F6E56;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.responsabilidade p:last-child {
+    margin-bottom: 0;
+}
