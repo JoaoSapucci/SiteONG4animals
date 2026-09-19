@@ -457,3 +457,227 @@ nav {
     padding: 18px;
     padding-left: 10px;
 }
+/* ==========================
+   SERGIO: BLOG - FAQ
+   ==========================*/
+
+.pagina-institucional {
+    width: 100%;
+    min-height: 70vh;
+    padding-top: 95px;
+    padding-bottom: 60px;
+}
+
+.pagina-cabecalho {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+.pagina-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 7px 16px;
+    background-color: #9FE1CB;
+    color: #0F6E56;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.pagina-cabecalho h1 {
+    margin: 0 0 15px;
+    color: #0F6E56;
+    font-size: 42px;
+}
+
+.pagina-cabecalho p {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2C2C2A;
+}
+
+.blog-grid {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.post-card {
+    background-color: #FFFFFF;
+    border: 1px solid #dcdcd5;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(44, 44, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(44, 44, 42, 0.13);
+}
+
+.post-imagem {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9FE1CB;
+    color: #0F6E56;
+    font-size: 75px;
+}
+
+.post-imagem-cuidados {
+    background-color: #d9eee6;
+}
+
+.post-imagem-resgate {
+    background-color: #e8f2ed;
+}
+
+.post-imagem-responsavel {
+    background-color: #cce8dc;
+}
+
+.post-conteudo {
+    padding: 25px;
+}
+
+.post-categoria {
+    color: #1D9E75;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.post-conteudo h2 {
+    margin: 10px 0 12px;
+    color: #0F6E56;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.post-conteudo p {
+    margin: 0 0 18px;
+    color: #2C2C2A;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.post-conteudo a {
+    color: #0F6E56;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.post-conteudo a:hover {
+    color: #1D9E75;
+}
+
+.contato-blog {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 20px 10px;
+    text-align: center;
+}
+
+.contato-blog h2,
+.faq-final h2 {
+    color: #0F6E56;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.contato-blog > p,
+.faq-final > p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+.contato-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contato-grid div {
+    min-width: 220px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #dcdcd5;
+    border-radius: 10px;
+}
+
+.contato-grid h3 {
+    color: #0F6E56;
+    margin-bottom: 8px;
+}
+
+.contato-grid p {
+    margin: 0;
+}
+
+.faq-lista {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: #FFFFFF;
+    border-left: 5px solid #0F6E56;
+    border-radius: 10px;
+    padding: 22px 25px;
+    box-shadow: 0 3px 12px rgba(44, 44, 42, 0.07);
+}
+
+.faq-item h2 {
+    margin: 0 0 10px;
+    color: #0F6E56;
+    font-size: 20px;
+}
+
+.faq-item p {
+    margin: 0;
+    color: #2C2C2A;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.faq-final {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.faq-contatos {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.faq-contatos a {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #0F6E56;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.faq-contatos a:hover {
+    background-color: #1D9E75;
+}
