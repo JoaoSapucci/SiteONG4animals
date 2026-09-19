@@ -457,8 +457,6 @@ nav {
     padding: 18px;
     padding-left: 10px;
 }
-/* ================================
-   FORMULÁRIO DE RESGATE
 
 .formulario {
     max-width: 850px;
@@ -472,10 +470,6 @@ nav {
 
     box-shadow: 0 4px 16px rgba(44, 44, 42, 0.06);
 }
-
-
-/* ================================
-   BOTÃO VOLTAR
 
 .voltar-btn {
     display: inline-block;
@@ -501,10 +495,6 @@ nav {
     color: #0F6E56;
 }
 
-
-/* ================================
-   CABEÇALHO
-
 .formulario-header {
     margin-bottom: 35px;
 }
@@ -520,10 +510,6 @@ nav {
     color: #5F5E5A;
     font-size: 15px;
 }
-
-
-/* ================================
-   BLOCOS
 
 fieldset {
     margin-bottom: 25px;
@@ -543,10 +529,6 @@ legend {
     font-size: 18px;
     font-weight: 700;
 }
-
-
-/* ================================
-   CAMPOS
 
 .campo {
     display: flex;
@@ -603,20 +585,12 @@ legend {
     min-height: 100px;
 }
 
-
-/* ================================
-   CAMPOS LADO A LADO
-
 .linha-campos {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     gap: 20px;
 }
-
-
-/* ================================
-   RADIO
 
 .opcoes {
     display: flex;
@@ -642,10 +616,6 @@ legend {
     accent-color: #0F6E56;
 }
 
-
-/* ================================
-   CAMPO DE ARQUIVO
-
 .campo input[type="file"] {
     padding: 8px;
 
@@ -659,10 +629,6 @@ legend {
     font-size: 12px;
 }
 
-
-/* ================================
-   CONFIRMAÇÃO
-
 .confirmacao {
     margin: 25px 0;
 
@@ -675,10 +641,6 @@ legend {
 
     accent-color: #0F6E56;
 }
-
-
-/* ================================
-   BOTÕES
 
 .botoes-formulario {
     display: flex;
@@ -712,9 +674,6 @@ legend {
 
     transform: translateY(-1px);
 }
-
-
-/* BOTÃO LIMPAR */
 
 .botoes-formulario .btn-limpar {
     background-color: #FFFFFF;
