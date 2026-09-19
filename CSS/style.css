@@ -457,6 +457,275 @@ nav {
     padding: 18px;
     padding-left: 10px;
 }
+/* ================================
+   FORMULÁRIO DE RESGATE
+
+.formulario {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: #6c817914;
+
+    border: 1px solid #D9D7D0;
+    border-radius: 14px;
+
+    box-shadow: 0 4px 16px rgba(44, 44, 42, 0.06);
+}
+
+
+/* ================================
+   BOTÃO VOLTAR
+
+.voltar-btn {
+    display: inline-block;
+
+    margin-bottom: 30px;
+    padding: 8px 14px;
+
+    color: #0F6E56;
+    background-color: transparent;
+
+    border: 1px solid #9FE1CB;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.voltar-btn:hover {
+    background-color: #9FE1CB;
+    color: #0F6E56;
+}
+
+
+/* ================================
+   CABEÇALHO
+
+.formulario-header {
+    margin-bottom: 35px;
+}
+
+.formulario-header h1 {
+    margin-bottom: 8px;
+
+    color: #2C2C2A;
+    font-size: 32px;
+}
+
+.formulario-header p {
+    color: #5F5E5A;
+    font-size: 15px;
+}
+
+
+/* ================================
+   BLOCOS
+
+fieldset {
+    margin-bottom: 25px;
+    padding: 25px;
+
+    border: 1px solid #D9D7D0;
+    border-radius: 10px;
+
+    background-color: #FFFFFF;
+}
+
+legend {
+    padding: 0 10px;
+
+    color: #0F6E56;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ================================
+   CAMPOS
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+.campo:last-child {
+    margin-bottom: 0;
+}
+
+.campo label {
+    margin-bottom: 6px;
+
+    color: #2C2C2A;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #D9D7D0;
+    border-radius: 6px;
+
+    color: #2C2C2A;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #1D9E75;
+
+    box-shadow: 0 0 0 3px rgba(159, 225, 203, 0.35);
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* ================================
+   CAMPOS LADO A LADO
+
+.linha-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* ================================
+   RADIO
+
+.opcoes {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding-top: 8px;
+}
+
+.opcoes label {
+    margin: 0;
+
+    color: #5F5E5A;
+
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.opcoes input {
+    margin-right: 5px;
+
+    accent-color: #0F6E56;
+}
+
+
+/* ================================
+   CAMPO DE ARQUIVO
+
+.campo input[type="file"] {
+    padding: 8px;
+
+    background-color: #F1EFE8;
+}
+
+.campo small {
+    margin-top: 6px;
+
+    color: #5F5E5A;
+    font-size: 12px;
+}
+
+
+/* ================================
+   CONFIRMAÇÃO
+
+.confirmacao {
+    margin: 25px 0;
+
+    color: #5F5E5A;
+    font-size: 14px;
+}
+
+.confirmacao input {
+    margin-right: 7px;
+
+    accent-color: #0F6E56;
+}
+
+
+/* ================================
+   BOTÕES
+
+.botoes-formulario {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.botoes-formulario button {
+    padding: 11px 24px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #0F6E56;
+    color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.botoes-formulario button:hover {
+    background-color: #1D9E75;
+
+    transform: translateY(-1px);
+}
+
+
+/* BOTÃO LIMPAR */
+
+.botoes-formulario .btn-limpar {
+    background-color: #FFFFFF;
+    color: #0F6E56;
+
+    border: 1px solid #9FE1CB;
+}
+
+.botoes-formulario .btn-limpar:hover {
+    background-color: #9FE1CB;
+    color: #0F6E56;
 /* ==========================
    SERGIO: BLOG - FAQ
    ==========================*/
