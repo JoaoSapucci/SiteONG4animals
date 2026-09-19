@@ -3,64 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registrar Resgate | ONG</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-   <nav>
-    <div class="ONG-name">
-        <img src="../Institucional/Fotos Home/name.png" alt="" width="235" height="31" >
-    </div>
-    <div>
-        <ul class="menu">
-            
-            <li>
-                <a href="../Institucional/Home.html">Home</a>
-            </li>
+   
+    <main>
 
-            <li>
-                <a href="../Institucional/Blog.html">Blog</a>
-            </li>
+        <section class="formulario">
 
-            <li>
-                <a href="../Institucional/FAQ.html">FAQ</a>
-            </li>
+            <a href="Resgate.html" class="voltar-btn">← Voltar</a>
 
-            <li>
-                <a href="#">Gestão</a>
+            <header class="formulario-header">
+                <h1>Registrar Novo Resgate</h1>
 
-                <ul class="submenu">
-                    <li><a href="../Gestão/Regaste.html">Resgates</a></li>
-                    <li><a href="../Gestão/Vacinação.html">Vacinação</a></li>
-                    <li><a href="../Gestão/Adoção.html">Adoção</a></li>
-                </ul>
-            </li>
+                <p>
+                    Preencha as informações abaixo para registrar um animal
+                    resgatado na plataforma.
+                </p>
+            </header>
 
-            <li>
-                <a href="#">Animais</a>
 
-                <ul class="submenu">
-                    <li><a href="../Animais/Divulgação.html">Divulgação</a></li>
-                    <li><a href="../Animais/Ficha.html">Ficha</a></li>
-                </ul>
-            </li>
+            <form>
 
-            <li>
-                <a href="#">Grupo</a>
+                <fieldset>
 
-                <ul class="submenu">
-                    <li><a href="../Portfólio/Joao/index.html">João Miguel</a></li>
-                    <li><a href="../Portfólio/Luiz/index.html">Luiz Passoni</a></li>
-                    <li><a href="../Portfólio/Leo/index.html">Leonardo Alessio</a></li>
-                    <li><a href="../Portfólio/Murilo/index.html">Murilo Maiorano</a></li>
-                    <li><a href="../Portfólio/Sergio/index.html">Sergio Otávio</a></li>
-                </ul>
-            </li>
+                    <legend>Dados do Protetor</legend>
 
-        </ul>
-    </div>
-    </nav>
+                    <div class="campo">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
 
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Dados do Animal</legend>
+
+                    <div class="campo">
+                        <label for="nome-animal">Nome do animal:</label>
+                        <input type="text" id="nome-animal" name="nome-animal">
+                    </div>
+
+
+                    <div class="linha-campos">
+
+                        <div class="campo">
+                            <label for="especie">Espécie:</label>
+
+                            <select id="especie" name="especie" required>
+                                <option value="">Selecione</option>
+                                <option value="cachorro">Cachorro</option>
+                                <option value="gato">Gato</option>
+                                <option value="ave">Ave</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+
+                        <div class="campo">
+                            <label>Sexo:</label>
+
+                            <div class="opcoes">
+                                <label>
+                                    <input type="radio" name="sexo" value="macho" required>
+                                    Macho
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="sexo" value="femea">
+                                    Fêmea
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="linha-campos">
+
+                        <div class="campo">
+                            <label for="idade">Idade aproximada:</label>
+                            <input type="text" id="idade" name="idade"
+                                placeholder="Ex.: aproximadamente 2 anos">
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="porte">Porte:</label>
+
+                            <select id="porte" name="porte">
+                                <option value="">Selecione</option>
+                                <option value="pequeno">Pequeno</option>
+                                <option value="medio">Médio</option>
+                                <option value="grande">Grande</option>
+                                <option value="nao-sei">Não identificado</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="caracteristicas">
+                            Características:
+                        </label>
+
+                        <textarea
+                            id="caracteristicas"
+                            name="caracteristicas"
+                            rows="4"
+                            placeholder="Descreva características visíveis do animal, como pelagem, aparência ou comportamento."></textarea>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Dados do Resgate</legend>
+
+
+                    <div class="linha-campos">
+
+                        <div class="campo">
+
+                            <label for="data">
+                                Data do resgate:
+                            </label>
+
+                            <input
+                                type="date"
+                                id="data"
+                                name="data"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="local">
+                                Local do resgate:
+                            </label>
+
+                            <input
+                                type="text"
+                                id="local"
+                                name="local"
+                                placeholder="Ex.: Rua, bairro ou ponto de referência"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="situacao">
+                            Situação encontrada:
+                        </label>
+
+                        <textarea
+                            id="situacao"
+                            name="situacao"
+                            rows="4"
+                            placeholder="Descreva brevemente a situação em que o animal foi encontrado."
+                            required></textarea>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="descricao">
+                            Descrição do resgate:
+                        </label>
+
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            rows="5"
+                            placeholder="Conte como ocorreu o resgate e outras informações relevantes sobre o acontecimento."
+                            required></textarea>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Foto</legend>
+
+                    <div class="campo">
+
+                        <label for="foto">
+                            Foto do animal:
+                        </label>
+
+                        <input
+                            type="file"
+                            id="foto"
+                            name="foto"
+                            accept="image/*">
+
+                        <small>
+                            Se possível, envie uma foto atual do animal.
+                        </small>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Observações</legend>
+
+                    <div class="campo">
+
+                        <label for="observacoes">
+                            Informações adicionais:
+                        </label>
+
+                        <textarea
+                            id="observacoes"
+                            name="observacoes"
+                            rows="4"
+                            placeholder="Adicione outras informações relevantes sobre o resgate."></textarea>
+
+                    </div>
+
+                </fieldset>
+
+                <div class="confirmacao">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="confirmacao"
+                            required>
+
+                        Confirmo que as informações fornecidas são verdadeiras.
+
+                    </label>
+
+                </div>
+
+                <div class="botoes-formulario">
+
+                    <button type="submit">
+                        Registrar resgate
+                    </button>
+
+                    <button type="reset" class="btn-limpar">
+                        Limpar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
 
 </body>
 </html>
