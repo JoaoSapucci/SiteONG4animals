@@ -505,22 +505,23 @@ nav {
     display: block;
 }
 
-.btn-ficha{
+.btn-ficha-adocao{
   display: flex;
   justify-content: center;
   align-items: center; 
 }
 
-.btn-ficha button{
+.btn-ficha-adocao a{
     background-color: #0F6E56;
     color: white;
     padding: 12px 25px;
     border: none;
     border-radius: 8px;
+    text-decoration: none;
     cursor: pointer;
     font-size: 16px;
 }
-.btn-ficha button:hover {
+.btn-ficha-adocao a:hover {
     background-color: #1D9E75;
 }
 
