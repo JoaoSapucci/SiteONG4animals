@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -995,19 +996,6 @@ Vacinação
     border-bottom: none;
 }
 
-.status {
-    display: inline-block;
-
-    padding: 7px 12px;
-
-    border-radius: 20px;
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-    white-space: nowrap;
-}
 
 .status-em-dia {
     background-color: #e2f5e9;
