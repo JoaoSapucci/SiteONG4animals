@@ -411,6 +411,7 @@ nav {
 
 /*Parte Leo*/
 
+/*Titulo*/
 .titulo-adoção{
     width: 100%;
     padding: 80px;
@@ -427,7 +428,9 @@ nav {
     line-height: 1.5;
 }
 
-.titulo-adoção hr{width: 80%;
+/*Titulo*/
+
+.divisão-adoção{width: 80%;
     height: 4px;
     margin: 0 auto;
     background-color: #0F6E56;
@@ -435,6 +438,15 @@ nav {
     border-radius: 10px;
 }
 
+.divisão-adoção2{
+    width: 100%;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #0F6E56;
+    border: none;
+    border-radius: 10px;
+}
+/*Conheça os animais*/
 .conheça-animais h2{
     width: 100%;
     text-align: center;
@@ -444,13 +456,376 @@ nav {
 
 .conheça-animais p{
     color: black;
-    font-size: 20px;
-    max-width: 800px;
+    font-size: 24px;
+    max-width: 1000px;
     margin: 0 auto 25px;
     padding-top: 15px;
     line-height: 1.5;
     text-align: center;
 }
+
+.animal-info-adoção{
+    padding: 30px;
+}
+.animal-info-adoção h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+.animal-info-adoção p {
+    margin: 8px 0;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.animal-info-adoção a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0F6E56;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.animal-info-adoção a:hover {
+    color: #1D9E75;
+}
+
+.animal-card-adoção {
+    width: 260px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.animal-card-adoção img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.btn-ficha{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.btn-ficha button{
+    background-color: #0F6E56;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-ficha button:hover {
+    background-color: #1D9E75;
+}
+
+/*Conheça os animais*/
+
+/*Etapas*/
+.processo-adoção h2{
+    width: 100%;
+    text-align: center;
+    color: #0F6E56;
+    font-size: 40px;
+    margin-top: 25px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.etapa-adoção{
+    flex: 1;
+    width: 200px;
+}
+
+.etapa-adoção p {
+    margin: 0;
+    width: 180px;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+/*Etapas*/
+/*Responsabilidade Protetor*/
+
+.responsabilidade-protetor h2{
+    width: 100%;
+    text-align: center;
+    color: #0F6E56;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.responsabilidade-protetor p{
+    border: 2px #0F6E56 solid;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 500px;
+    
+}
+
+.adoção-p1{padding-top: 20px;}
+
+.adoção-p2{padding-top: 50px;}
+
+.responsabilidade-protetor2{display: flex;}
+
+.responsabilidade-protetor span{
+    font-weight: bold;
+}
+/*Responsabilidade Protetor*/
+
+/*Registro de adoção*/
+
+.registros-adocoes {
+    padding: 70px 8%;
+}
+
+.container-adoção {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-secao-adoção {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.titulo-secao-adoção h2 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    color: #0F6E56;
+}
+
+.titulo-secao-adoção p {
+    margin: 0;
+    color: #777;
+    font-size: 16px;
+}
+
+.tabela-container-adoção {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.table-adoção {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.thead-adoção {
+    background-color: #1D9E75;
+}
+
+.thead-adoção th {
+    padding: 18px 20px;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tbody-adoção td {
+    padding: 18px 20px;
+    color: #555;
+    font-size: 17px;
+    border-bottom: 1px solid #eee;
+}
+
+.tbody-adoção tr {
+    transition: 0.2s;
+}
+
+.tbody-adoção tr:hover {
+    background-color: #f5f9f8;
+}
+
+.tbody-adoção tr:last-child td {
+    border-bottom: none;
+}
+
+.status {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.status.adotado {
+    background-color: #e1f4e8;
+    color: #27834a;
+}
+
+.historias-adocao {
+    padding: 80px 8%;
+}
+
+.container-adoção2 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-historias {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.titulo-historias h2 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    color: #0F6E56;
+}
+
+.titulo-historias p {
+    margin: 0;
+    color: #777;
+    font-size: 18px;
+}
+
+.cards-adocao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-adocao {
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card-adocao:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.imagem-animal {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.imagem-animal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.card-adocao:hover .imagem-animal img {
+    transform: scale(1.05);
+}
+
+
+.info-animal {
+    padding: 25px;
+}
+
+.info-animal h3 {
+    margin: 0 0 18px;
+    font-size: 28px;
+    color: #333;
+}
+
+.info-animal p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.info-animal strong {
+    color: #444;
+}
+
+.status-adocao {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #e1f4e8;
+    color: #27834a;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.agradecimento-adoção {
+    padding: 60px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.agradecimento-conteudo-adoção {
+    max-width: 750px;
+    padding: 45px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.agradecimento-adoção h2 {
+    margin: 0 0 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+
+.agradecimento-adoção p {
+    margin: 10px auto;
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.agradecimento-adoção .convite {
+    margin-top: 25px;
+    font-weight: 500;
+    color: #444;
+}
+
+
+.btn-adocao {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #5c8d89;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-adocao:hover {
+    background: #0F6E56;
+    transform: translateY(-2px);
+}
+
+/*Parte Leo*/
+
 .ONG-name{
     justify-content: left;
     margin-bottom: -70px;
