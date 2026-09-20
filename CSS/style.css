@@ -824,6 +824,244 @@ nav {
     transform: translateY(-2px);
 }
 
+/*==============
+Vacinação
+================*/
+
+.divisão-vacinação{
+    width: 100%;
+    height: 4px;
+    background-color: #0F6E56;
+    border: none;
+    border-radius: 10px;
+}
+
+.saude-animais {
+    padding: 80px 8%;
+    max-width: 100%;
+}
+
+.container-vacinação {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.cabecalho-vacinação {
+    max-width: 800px;
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.cabecalho-vacinação h1 {
+    margin: 0 0 20px;
+
+    font-size: 38px;
+
+    color: #0F6E56;
+}
+
+.cabecalho-vacinação p {
+    margin: 0;
+
+    color: black;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+.categorias-vacinação {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 60px;
+}
+
+.categoria-vacinação {
+    padding: 12px 20px;
+
+    background-color: #ffffff;
+
+    color: #555;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.categoria:hover, .categoria {
+    border: 2px #0F6E56 solid;
+    color: #0F6E56;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.registro-saude {
+    margin-bottom: 60px;
+}
+
+.titulo-registro {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.titulo-registro-vacinação h2 {
+    margin: 0 0 5px;
+    font-size: 36px;
+    color: #0F6E56;
+}
+
+.titulo-registro p {
+    margin: 0;
+
+    color: black;
+
+    font-size: 18px;
+}
+
+
+.tabela-container-vacinação {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background-color: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.tabela-container-vacinação table {
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+}
+
+.tabela-container-vacinação thead {
+    background-color: #5c8d89;
+}
+
+.tabela-container-vacinação th {
+    padding: 17px 18px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tabela-container-vacinação td {
+    padding: 17px 18px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #555;
+
+    font-size: 16px;
+}
+
+.tabela-container-vacinação tbody tr {
+    transition: 0.2s;
+}
+
+.tabela-container-vacinação tbody tr:hover {
+    background-color: #f5f9f8;
+}
+
+.tabela-container-vacinação tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.status {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.status-em-dia {
+    background-color: #e2f5e9;
+    color: #258047;
+}
+
+.status-proxima {
+    background-color: #fff3d6;
+    color: #D85A30;
+}
+
+.status-acompanhamento-vacinação {
+    background-color: #e5eefc;
+
+    color: #3565a8;
+}
+
+.status-tratamento-vacinação {
+    background-color: #fde5e5;
+
+    color: #b53a3a;
+}
+
+.saude-animais a{
+    text-decoration: none;
+    color: #0F6E56;
+}
+
+.informacoes-complementares-vacinação {
+    padding: 30px 8% 70px;
+}
+
+.informacao-conteudo-vacinação {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px 30px;
+}
+
+.informacao-texto-vacinação h2 {
+    margin: 0 0 12px;
+    font-size: 40px;
+    color: #0F6E56;
+}
+
+.informacao-texto-vacinação p {
+    margin: 8px 0;
+    color: black;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+}
+
 /*Parte Leo*/
 
 .ONG-name{
