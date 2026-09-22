@@ -1295,8 +1295,8 @@ legend {
 .pagina-institucional {
     width: 100%;
     min-height: 70vh;
-    padding-top: 95px;
     padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .pagina-cabecalho {
@@ -1686,4 +1686,506 @@ legend {
 
 .responsabilidade p:last-child {
     margin-bottom: 0;
+}
+/* ==========================================
+   1. TIPOGRAFIA & TÍTULOS
+   ========================================== */
+
+.titulo-pagina-murilo {
+    color: #0F6E56;
+    line-height: 1.3;
+    font-size: 32px;
+}
+
+.animal-info-ficha h2,
+.chamada h2,
+.informacoes h2,
+.informacoes h3 {
+    color: #0F6E56;
+    line-height: 1.3;
+}
+
+/* ==========================================
+   2. APRESENTAÇÃO & ÍNDICE DE NAVEGAÇÃO
+   ========================================== */
+
+.apresentacao {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 70px;
+}
+
+.apresentacao p {
+    font-size: 17px;
+    color: #444;
+    margin-top: 8px;
+}
+
+.apresentacao .aviso {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FFF3D6;
+    border-left: 5px solid #D85A30;
+    color: #663C00;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.indice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D7D0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.indice span {
+    font-weight: bold;
+    color: #0F6E56;
+    margin-right: 5px;
+}
+
+.indice a {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #F1EFE8;
+    color: #0F6E56;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.indice a:hover {
+    background-color: #0F6E56;
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   3. LINKS & BOTÕES GERAIS
+   ========================================== */
+
+.link-texto {
+    color: #0F6E56;
+    text-decoration: underline;
+}
+
+.link-texto:hover {
+    color: #993C1D;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #F5C4B3;
+    border: 1px solid #D85A30;
+    color: #993C1D;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #993C1D;
+    color: #FFFFFF;
+}
+
+.logo {
+    width: 160px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* ==========================================
+   4. PÁGINA DE DIVULGAÇÃO (CARDS PEQUENOS)
+   ========================================== */
+
+.animais-cards-ficha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.animal-card-ficha {
+    width: 250px;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #9FE1CB;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.animal-card-ficha img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.animal-info-ficha {
+    padding: 18px;
+}
+
+/* ==========================================
+   5. PÁGINA DE FICHAS DOS ANIMAIS
+   ========================================== */
+
+.container-fichas {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px 40px;
+}
+
+.ficha-animal {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #9FE1CB;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    scroll-margin-top: 100px;
+}
+
+.ficha-imagem-container {
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-imagem-container img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Status / Situação */
+.situacao {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.situacao.disponivel {
+    background-color: #E2F5E9;
+    color: #258047;
+    border: 1px solid #BCE5CB;
+}
+
+.situacao.recuperacao {
+    background-color: #FFF3D6;
+    color: #B56B00;
+    border: 1px solid #FFE0A3;
+}
+
+/* Detalhes internos da ficha */
+.informacoes {
+    flex: 1;
+    min-width: 0;
+}
+
+.informacoes h2 {
+    font-size: 32px;
+    color: #0F6E56;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9FE1CB;
+    padding-bottom: 8px;
+}
+
+.informacoes h3 {
+    margin: 0 0 10px;
+}
+
+.ficha-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.ficha-bloco {
+    background-color: #FBFBFA;
+    padding: 15px 18px;
+    border-radius: 8px;
+    border: 1px solid #EAE8E1;
+}
+
+.ficha-bloco.largo {
+    margin-bottom: 15px;
+}
+
+.ficha-bloco h3 {
+    font-size: 16px;
+    color: #0F6E56;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ficha-bloco p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.lista-saude {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.lista-saude li {
+    font-size: 13px;
+    background-color: #FFFFFF;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #E2E0D8;
+}
+
+.adocao-info {
+    background-color: #EAF7F2;
+    border-color: #9FE1CB;
+}
+
+.adocao-info.indisponivel {
+    background-color: #FFF8E7;
+    border-color: #FFE0A3;
+}
+
+.ficha-rodape-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #EEE;
+}
+
+.ficha-rodape-links .link-texto {
+    color: #0F6E56;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.ficha-rodape-links .link-texto:hover {
+    color: #1D9E75;
+    text-decoration: underline;
+}
+
+.ficha-rodape-links .voltar-topo {
+    color: #777;
+    font-weight: normal;
+}
+
+/* ==========================================
+   6. SECTION: COMO ADOTAR
+   ========================================== */
+
+.chamada-adotar-fichas {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    scroll-margin-top: 100px;
+}
+
+.chamada-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    border: 2px solid #0F6E56;
+    box-shadow: 0 8px 25px rgba(15, 110, 86, 0.08);
+}
+
+.chamada-card h2 {
+    font-size: 32px;
+    color: #0F6E56;
+    margin-bottom: 8px;
+}
+
+.chamada-subtitulo {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.passos-adocao-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.passo-card {
+    background-color: #F1EFE8;
+    padding: 25px 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.passo-numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #0F6E56;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.passo-card h3 {
+    font-size: 18px;
+    color: #0F6E56;
+    margin-bottom: 8px;
+}
+
+.passo-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.chamada-alerta {
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.botao-principal {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #0F6E56;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao-principal:hover {
+    background-color: #1D9E75;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   8. COMPLEMENTO - PÁGINA DE DIVULGAÇÃO (4 NA MESMA LINHA)
+   ========================================== */
+
+.container-divulgacao {
+    max-width: 1200px; /* Aumentado para dar espaço aos 4 cartões */
+    margin: 0 auto;
+    padding: 20px 15px 40px;
+}
+
+/* Container dos cartões */
+.animais-cards-ficha {
+    display: flex;
+    flex-wrap: nowrap; /* Impede a quebra de linha em telas grandes */
+    justify-content: center;
+    gap: 15px; /* Espaço entre cada cartão */
+}
+
+/* Ajuste individual do cartão */
+.animal-card-ficha {
+    width: 235px; /* Largura ajustada para caberem os 4 lado a lado */
+    max-width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #9FE1CB;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.animal-card-ficha:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(15, 110, 86, 0.15);
+}
+
+.animal-info-ficha {
+    padding: 15px; /* Reduzido levemente para otimizar espaço */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.animal-info-ficha h2 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.especie-idade {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1D9E75;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.descricao-curta {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.protetor-info {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* Botão do Card */
+.botao-card {
+    display: block;
+    text-align: center;
+    padding: 9px 12px;
+    margin-top: 10px;
+    background-color: #0F6E56;
+    color: #FFFFFF;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.botao-card:hover {
+    background-color: #1D9E75;
 }
