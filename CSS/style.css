@@ -120,33 +120,7 @@ nav {
     display: block;
     border: 5px solid #0F6E56;
 }
-.banner-conteudo {
-    text-align: center;
-    padding: 40px 20px;
-}
-.banner-conteudo h1 {
-    margin: 0 0 15px;
-    font-size: 40px;
-    color: #0F6E56;
-}
-.banner-conteudo p {
-    max-width: 700px;
-    margin: 0 auto 25px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-.banner-conteudo button {
-    background-color: #0F6E56;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.banner-conteudo button:hover {
-    background-color: #1D9E75;
-}
+
 .missao {
     text-align: center;
     padding: 50px 20px;
@@ -179,10 +153,10 @@ nav {
 }
 .etapas {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
+    overflow-x: auto;
 }
 .etapa {
     flex: 1;
@@ -564,6 +538,7 @@ nav {
 
 .responsabilidade-protetor p{
     border: 2px #0F6E56 solid;
+    padding: 20px;
     border-radius: 10px;
     color: black;
     font-size: 20px;
@@ -571,13 +546,10 @@ nav {
     line-height: 1.5;
     text-align: center;
     background-color: #FFFFFF;
-    width: 500px;
+    width: 400px;
     
 }
 
-.adoção-p1{padding-top: 20px;}
-
-.adoção-p2{padding-top: 50px;}
 
 .responsabilidade-protetor2{display: flex;}
 
@@ -1041,6 +1013,7 @@ Vacinação
     margin: 0 0 12px;
     font-size: 40px;
     color: #0F6E56;
+    text-align: center;
 }
 
 .informacao-texto-vacinação p {
@@ -1603,7 +1576,7 @@ legend {
 
 .resgate-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -1638,7 +1611,7 @@ legend {
     background-color: #1D9E75;
 }
 .responsabilidade {
-    padding: 50px 20px 60px;
+    padding: 0px 0px 15px;
 }
 
 .responsabilidade-conteudo {
