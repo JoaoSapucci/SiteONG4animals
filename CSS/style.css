@@ -1352,28 +1352,6 @@ legend {
     box-shadow: 0 8px 22px rgba(44, 44, 42, 0.13);
 }
 
-.post-imagem {
-    height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #9FE1CB;
-    color: #0F6E56;
-    font-size: 75px;
-}
-
-.post-imagem-cuidados {
-    background-color: #d9eee6;
-}
-
-.post-imagem-resgate {
-    background-color: #e8f2ed;
-}
-
-.post-imagem-responsavel {
-    background-color: #cce8dc;
-}
-
 .post-conteudo {
     padding: 25px;
 }
