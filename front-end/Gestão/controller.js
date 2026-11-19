@@ -54,9 +54,9 @@ function criarFicha(animal) {
                     Conheça o processo de adoção →
                 </a>
 
-                <a class="link-texto voltar-topo" href="#indice-animais">
-                    ↑ Voltar à lista
-                </a>
+                <button type="button" class="botao-excluir voltar-topo">
+                    Excluir animal
+                </button>
             </div>
         </div>
     `;
@@ -75,12 +75,27 @@ function criarFicha(animal) {
     ficha.querySelector(".data").textContent = animal.data ?? "Não informado";
     ficha.querySelector(".local").textContent = animal.local ?? "Não informado";
 
-    // Imagem temporária até implementarmos o envio de fotos
     const imagem = ficha.querySelector(".foto-animal");
-    imagem.src = "../FotosAnimais/sem-foto.png";
+
+    imagem.onerror = function() {
+        imagem.style.display = "none";
+    };
+
+    imagem.src = `http://127.0.0.1:5000/animais/${animal.id}/foto`;
     imagem.alt = `Foto de ${animal.nome ?? "animal"}`;
 
-    // Adiciona a ficha à página
+    const botaoExcluir = ficha.querySelector(".botao-excluir");
+
+    botaoExcluir.addEventListener("click", function() {
+        const confirmar = confirm(
+            `Tem certeza que deseja excluir ${animal.nome}?`
+        );
+
+        if (confirmar) {
+            excluirAnimal(animal.id);
+        }
+    });
+
     lista.appendChild(ficha);
 }
 
@@ -117,10 +132,10 @@ function carregarAnimais() {
 }
 
 
+
 function cadastrarAnimal() {
     const formulario = document.querySelector("form");
 
-    // Verifica os campos obrigatórios
     if (!formulario.reportValidity()) {
         return;
     }
@@ -129,9 +144,8 @@ function cadastrarAnimal() {
 
     const idadeDigitada = document.getElementById("idade").value.trim();
 
-    // A idade deve ser numérica, pois no SQLite é INTEGER
     if (idadeDigitada !== "" && !Number.isInteger(Number(idadeDigitada))) {
-        alert("Digite apenas um número inteiro no campo idade!");
+        alert("Digite uma idade numérica inteira!");
         return;
     }
 
@@ -143,6 +157,7 @@ function cadastrarAnimal() {
         sexo: sexoSelecionado.value,
         idade: idadeDigitada === "" ? null : Number(idadeDigitada),
         caracteristicas: document.getElementById("caracteristicas").value,
+        status: 1,
         porte: document.getElementById("porte").value,
         protetor: document.getElementById("protetor").value,
         contato: document.getElementById("contato").value,
@@ -168,13 +183,76 @@ function cadastrarAnimal() {
         console.log(resultado.mensagem);
         console.log("ID cadastrado:", resultado.id);
 
-        alert("Animal cadastrado com sucesso!");
-
-        window.location.href = "../Animais/Ficha.html";
+        // Depois de cadastrar o animal, envia a foto
+        return cadastrarFoto(resultado.id)
+            .then(() => {
+                alert("Animal cadastrado com sucesso!");
+                window.location.href = "../Animais/Ficha.html";
+            })
+            .catch(error => {
+                console.log("Falha no envio da foto:", error);
+                alert("Animal cadastrado, mas não foi possível salvar a foto.");
+                window.location.href = "../Animais/Ficha.html";
+            });
     })
     .catch(error => {
         console.log("Falha no cadastro:", error);
         alert("Não foi possível cadastrar o animal.");
+    });
+}
+
+
+
+function cadastrarFoto(idAnimal) {
+    const foto = document.getElementById("foto").files[0];
+
+    // Se nenhuma foto foi selecionada, encerra normalmente
+    if (!foto) {
+        return Promise.resolve();
+    }
+
+    const dadosFoto = new FormData();
+    dadosFoto.append("foto", foto);
+
+    return fetch(`http://127.0.0.1:5000/animais/${idAnimal}/foto`, {
+        method: "POST",
+        body: dadosFoto
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Erro ao cadastrar a foto");
+        }
+
+        return response.json();
+    });
+}
+
+
+function excluirAnimal(idAnimal) {
+    let endpoint = `http://127.0.0.1:5000/animais/${idAnimal}`;
+
+    return fetch(endpoint, {
+        method: "DELETE"
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Erro ao excluir animal");
+        }
+
+        return response.json();
+    })
+    .then(resultado => {
+        console.log(resultado.mensagem);
+
+        alert("Animal excluído com sucesso!");
+
+        // Atualiza a lista após a exclusão
+        carregarAnimais();
+    })
+    .catch(error => {
+        console.log("Falha na exclusão:", error);
+
+        alert("Não foi possível excluir o animal.");
     });
 }
 

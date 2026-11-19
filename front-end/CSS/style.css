@@ -2140,3 +2140,19 @@ legend {
 .botao-card:hover {
     background-color: #1D9E75;
 }
+
+.ficha-rodape-links .botao-excluir {
+    margin-left: auto;
+    background-color: #D85A30;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ficha-rodape-links .botao-excluir:hover {
+    background-color: #993C1D;
+    color: #FFFFFF;
+}

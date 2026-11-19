@@ -54,3 +54,56 @@ def cadastrarAnimal(dados):
     conexao.close()
 
     return idAnimal
+
+
+def cadastrarFoto(idAnimal, foto):
+    conexao = sqlite3.connect(CAMINHO_BANCO)
+    cursor = conexao.cursor()
+
+    cursor.execute("""
+        UPDATE animais
+        SET foto = ?
+        WHERE id = ?
+    """, (foto, idAnimal))
+
+    atualizado = cursor.rowcount > 0
+
+    conexao.commit()
+    conexao.close()
+
+    return atualizado
+
+
+def consultarFoto(idAnimal):
+    conexao = sqlite3.connect(CAMINHO_BANCO)
+    cursor = conexao.cursor()
+
+    cursor.execute(
+        "SELECT foto FROM animais WHERE id = ?",
+        (idAnimal,)
+    )
+
+    registro = cursor.fetchone()
+
+    conexao.close()
+
+    if registro is None:
+        return None
+
+    return registro[0]
+
+def excluirAnimal(idAnimal):
+    conexao = sqlite3.connect(CAMINHO_BANCO)
+    cursor = conexao.cursor()
+
+    cursor.execute("""
+        DELETE FROM animais
+        WHERE id = ?
+    """, (idAnimal,))
+
+    excluido = cursor.rowcount > 0
+
+    conexao.commit()
+    conexao.close()
+
+    return excluido
