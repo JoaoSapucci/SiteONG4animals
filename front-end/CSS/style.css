@@ -13,16 +13,53 @@ body {
     background-color: #F1EFE8;
 }
 
+
 nav {
     background-color: #F1EFE8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+
     box-shadow: 0 2px 8px rgba(44, 44, 42, 0.08);
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 0 20px;
 }
+
+.nav-menu {
+    justify-self: center;
+}
+
+
+.btn-cadastrar {
+    justify-self: end;
+
+    background-color: #0F6E56;
+    color: #FFFFFF;
+
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+
+    transition: background-color 0.25s ease;
+}
+
+.btn-cadastrar:hover {
+    background-color: #1D9E75;
+    color: #FFFFFF;
+}
+
 
 .menu {
     display: flex;
@@ -40,7 +77,7 @@ nav {
 
 .menu > li > a {
     display: block;
-    padding: 17px 45px;
+    padding: 17px 18px;
 
     color: #0F6E56;
     text-decoration: none;
@@ -1025,13 +1062,13 @@ Vacinação
 }
 
 /*Parte Leo*/
-
-.ONG-name{
-    justify-content: left;
-    margin-bottom: -70px;
-    padding: 18px;
-    padding-left: 10px;
+.ONG-name {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    padding: 0;
 }
+
 
 .formulario {
     max-width: 850px;
